@@ -14,9 +14,9 @@
                 <div class="navbar-top"></div>
                 <div class="navbar-bottom">
                     <div class="navbar-menu">
-                        <a href="#about" class="navbar-menu-item"><i class="fa fa-credit-card"></i> <span>About</span></a>
+                        <a href="#about" class="navbar-menu-item"><i class="fa fa-address-card"></i> <span>About</span></a>
                         <a href="#skills" class="navbar-menu-item"><i class="fa fa-book"></i> <span>Skills</span></a>
-                        <a href="#work" class="navbar-menu-item"><i class="fa fa-business-time"></i> <span>Work</span></a>
+                        <a href="#work" class="navbar-menu-item"><i class="fa fa-briefcase"></i> <span>Work</span></a>
                         <a href="#contact" class="navbar-menu-item"><i class="fa fa-phone"></i> <span>Contact</span></a>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                         <p>I design and code beautifully simple things, I am passionate about my work.</p>
                     </div>
                     <div class="profile">
-                        <img src="https://th.bing.com/th/id/OIP.Wwe8_WlvNw7beSo7dZoBegHaHZ?pid=ImgDet&rs=1" alt="">
+                        <img src="./assets/images/my-profil.jpg" alt="">
                     </div>
                 </div>
             </section>
@@ -140,9 +140,14 @@
                             <div class="work-item-content">
                                 <div class="w-title">
                                     <h3>Portfolio</h3>
-                                    <a href="#">
-                                        <i class="fa-solid fa-globe"></i>
-                                    </a>
+                                    <div>
+                                        <a href="https://github.com/Njato007">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="w-description">
                                     <p>Created by using Nodejs express
@@ -151,7 +156,7 @@
                                     <img src="https://placeholder.com/500x300" alt="">
                                 </div>
                                 <div class="w-link">
-                                    <a href="#">Take a look</a>
+                                    <!-- <a href="#">Take a look</a> -->
                                 </div>
                             </div>
                         </div>
@@ -159,9 +164,14 @@
                             <div class="work-item-content">
                                 <div class="w-title">
                                     <h3>QUIZ</h3>
-                                    <a href="#">
-                                        <i class="fa-solid fa-globe"></i>
-                                    </a>
+                                    <div>
+                                        <a href="https://github.com/Njato007">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="w-description">
                                     <p>Created by using Nodejs express
@@ -170,7 +180,7 @@
                                     <img src="https://placeholder.com/500x300" alt="">
                                 </div>
                                 <div class="w-link">
-                                    <a href="#">Take a look</a>
+                                    <!-- <a href="#">Take a look</a> -->
                                 </div>
                             </div>
                         </div>
@@ -187,8 +197,8 @@
                 <div class="contact-content">
                     <div class="contact-form">
                         <div class="form">
-                            <form action="">
-                                <h2>TEXT ME QUICK</h2>
+                            <form class="" onsubmit="sendEmail(); reset(); return false;">
+                                <h2>SEND ME A MESSAGE</h2>
                                 <div class="form-group">
                                     <input type="text" id="name" class="form-control"  placeholder=" ">
                                     <label for="name">Name</label>
@@ -204,7 +214,10 @@
                                     <label for="message">Message</label>
                                 </div>
                                 <div class="form-group form-button">
-                                    <button><i class="fa fa-paper-plane" aria-hidden="true"></i> SEND</button>
+                                    <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> SEND</button>
+                                    <div class="form-group issuccess">
+                                        <p><i class="fa fa-check"></i> Your message has been sent successfully</p>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -214,35 +227,16 @@
                                     <h3>Contacts :</h3>
                                     <div class="icon">
                                         <a href="#">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <span>Antananarivo, Madagascar</span>
+                                        </a>
+                                        <a href="tel:+261345174241">
                                             <i class="fa fa-phone"></i>
-                                            <span>+261 34 51 742 41</span>
+                                            <span>Phone: +261 34 51 742 41</span>
                                         </a>
-                                    </div>
-                                    <div class="icon">
-                                        <a href="#">
+                                        <a href="mailto:njatotianafiononana@gmail.com">
                                             <i class="fa fa-envelope"></i>
-                                            <span>njatotianafiononana@gmail.com</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="social-media">
-                                    <h3>Other Profils :</h3>
-                                    <div class="icon">
-                                        <a href="#">
-                                            <i class="fa-brands fa-facebook"></i>
-                                            <span>Facebook</span>
-                                        </a>
-                                    </div>
-                                    <div class="icon">
-                                        <a href="#">
-                                            <i class="fa-brands fa-github"></i>
-                                            <span>GitHub</span>
-                                        </a>
-                                    </div>
-                                    <div class="icon">
-                                        <a href="#">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                            <span>Linkedin</span>
+                                            <span>Email: njatotianafiononana@gmail.com</span>
                                         </a>
                                     </div>
                                 </div>
@@ -260,8 +254,19 @@
                         <h3>Designer</h3>
                         <div class="icon">
                             <a href="#">
-                                <span>Njatotiana Fiononana A.</span>
+                                <span>Njatotiana Fiononana ANDRIAMANIRISOA</span>
                             </a>
+                            <div class="links">
+                                <a href="https://facebook.com/njatotiana.fiononana.a" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/Njato007" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -277,10 +282,45 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Copyright 2023</p>
+                <p>Copyright © 2023 Njatotiana Fiononana ANDRIAMANIRISOA. All rights reserved.</p>
             </div>
         </div>
         <script src="assets/js/custom.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+
+            function sendEmail() {
+                Email.send({
+                    SecureToken: "9515b437-a014-4c09-8ba8-535dde23f7e5",
+                    To : 'njatosportfolio@gmail.com',
+                    From : 'njatosportfolio@gmail.com',
+                    Subject : "Someone got in touch",
+                    Body : `
+                        <style>
+                            * { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+                            p { font-size: 14px; }
+                            .m-content { width: 500px; background: #f5f5f5; padding: 2em;}
+                        </style>
+                        <div class="m-content">
+                            <h2>Content</h2>
+                            <p><b>Name:</b> ${document.getElementById("name").value}</p>
+                            <p><b>Email:</b> ${document.getElementById("email").value}</p>
+                            <p><b>Message:</b> <br>
+                                ${document.getElementById("message").value}    
+                            </p>
+                        </div>
+                    `
+                }).then(
+                    message => {
+                        const Form = document.forms[0];
+                        Form.classList.add('success');
+                        setTimeout(() => {
+                            Form.classList.remove('success')
+                        }, 5000);
+                    }
+                );
+            }
+        </script>
     </div>
 </body>
 </html>
