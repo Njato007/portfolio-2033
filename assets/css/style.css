@@ -1,4 +1,5 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'); */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 @font-face {
     font-family: 'roboto-regular';
     src: url('../fonts/Roboto-Regular.ttf');
@@ -66,13 +67,13 @@ textarea {
 }
 .header .navbar-menu {
     padding: .4em;
-    border-radius: .5em;
+    border-radius: .2em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .header.fixed .navbar-menu {
-    background-color: var(--light-green);
+    background-color: var(--green);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     opacity: .9;
 }
@@ -96,11 +97,12 @@ textarea {
 
 .navbar-menu > .navbar-menu-item {
     text-decoration: none;
-    color: var(--dark-green);
+    color: var(--green);
+    opacity: .9;
     text-transform: uppercase;
     margin: 0 .3em;
     position: relative;
-    padding: .1em .4em;
+    padding: .2em .4em;
     overflow: hidden;
     text-align: center;
 }
@@ -109,8 +111,22 @@ textarea {
 }
 .navbar-menu-item.active  {
     color: var(--green) !important;
-    background-color: var(--white);
+    /* background-color: var(--green); */
     border-radius: 3px;
+}
+.navbar-menu-item::before  {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: var(--white);
+    z-index: -1;
+    transition: transform 0.4s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.navbar-menu-item.active::before  {
+    transform: scaleX(1);
 }
 .navbar-menu > .navbar-menu-item:hover {
     color: var(--green);
@@ -186,12 +202,12 @@ section .title.dark.white h1 {
 }
 .home-slogan > h1 {
     font-size: 40px;
-    color: var(--light-secondary);
+    color: var(--secondary);
     margin: .5em 0;
 }
 .home-slogan > p {
     font-size: 25px;
-    color: var(--secondary);
+    color: var(--dark-secondary);
 }
 .section-about {
     background-color: var(--green) !important;
@@ -215,7 +231,7 @@ section .title.dark.white h1 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 2px solid #bdb761;
+    border: 4px solid var(--dark-green);
 }
 
 .paragraph > h1 {
@@ -413,10 +429,11 @@ section .title.dark.white h1 {
     text-align: center;
 }
 .form-group > button {
-    padding: .5em 1em;
+    padding: .8em 1.8em;
     border: none;
     border-radius: 2px;
-    background-color: var(--green);
+    background-color: var(--dark-green);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
     color: var(--white);
     font-family: 'roboto-medium';
     font-size: 18px;
@@ -450,14 +467,21 @@ section .title.dark.white h1 {
     text-align: left;
 }
 .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1em 2em;
     background-color: var(--dark);
     text-align: center;
-    color: var(--white);
+}
+.footer-bottom p {
+    padding: 1em 20px;
+    text-align: center;
+    color: var(--dark-secondary);
 }
 .social-media {
     width: 100%;
-    padding: 0 .4em;
+    /* padding: 0 .4em; */
 }
 .social-media h3 {
     color: var(--light-green);
@@ -471,7 +495,7 @@ section .title.dark.white h1 {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--light-secondary);
+    color: var(--secondary);
     font-size: 25px;
     margin: .6em;
 }
@@ -486,6 +510,9 @@ section .title.dark.white h1 {
 .other-contact .social-media h3 {
     color: var(--green);
     font-size: 18px;
+}
+.links {
+    display: flex;
 }
 
 .section-work {
@@ -519,6 +546,7 @@ section .title.dark.white h1 {
 .w-title a {
     font-size: 20px;
     color: var(--secondary);
+    margin: 0 .3em;
 }
 .w-title h3 {
     font-size: 18px;
@@ -586,9 +614,10 @@ section .title.dark.white h1 {
     opacity: 0;
 }
 .section-home img {
-    transition: opacity 0.8s, transform 0.6s ease-out;
+    transition: opacity 0.8s, transform 0.6s;
     opacity: 0;
     transform: translateY(-100px);
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 .section-home.observed img,
 .section-home.observed h1,
@@ -615,6 +644,10 @@ section .title span {
 section.observed .title span {
     font-size: 35px;
 }
+section.observed .title span i {
+    animation: shake .5s normal;
+    animation-iteration-count: 2;
+}
 
 .section-skills .front-end {
     transform-origin: right;
@@ -629,6 +662,7 @@ section.observed .title span {
     transform-style: preserve-3d;
     transition: transform 1s ease-in-out,
                 opacity .2s ease-in;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 .skills-list {
     perspective: 2000px;
@@ -658,6 +692,11 @@ section.observed .title span {
     transition-delay: .3s;
     opacity: 0;
 }
+.section-work .work-item .w-title {
+    transition: opacity 0.3s;
+    opacity: 0;
+    transition-delay: 0.3s;
+}
 .section-work .work-item .w-description img {
     transform: translateY(-180px);
 }
@@ -667,12 +706,47 @@ section.observed .title span {
 .section-work.observed .work-item .w-description img{
     transform: translateY(0);
 }
-.section-work.observed .work-item .w-description p {
+.section-work.observed .work-item .w-description p,
+.section-work.observed .work-item .w-title {
     transform: translateX(0);
     opacity: 1;
 }
 
+/* CONTACT FORM */
+.section-contact .form {
+    overflow: hidden;
+}
+.section-contact .other-contact,
+.section-contact form {
+    transition: transform 0.7s;
+    transition-timing-function: cubic-bezier(0.9, 1.8, 0.4, 0.8);
+}
+.section-contact .other-contact {
+    transform-origin: right;
+    transform: translateX(500px);
+}
+.section-contact form {
+    transform-origin: left;
+    transform: translateX(-500px);
+}
+.section-contact.observed .other-contact,
+.section-contact.observed form {
+    transform: translateX(0);
+}
 
+form .issuccess {
+    color:var(--light-green);
+    transition: transform 0.5s;
+    transform: translateX(1000px);
+    position: absolute;
+    top: 0;
+}
+form.success .issuccess {
+    transform: translateX(0);
+}
+form.success .form-button > button{
+    transform: translateX(-500px);
+}
 
 /* end OBSERVED */
 
@@ -761,6 +835,10 @@ section.observed .title span {
     .paragraph > p {
         font-size: 15px;
     }
+    .profile > img {
+        width: 180px;
+        height: 180px;
+    }
     .navbar-menu > .navbar-menu-item:hover::before {
         height: 2px;
     }
@@ -844,6 +922,31 @@ section.observed .title span {
     }
 }
 
+
+@media screen and (max-width: 375px) {
+    
+    .profile img {
+        width: 160px; height: 160px;
+    }
+    .idea > span {
+        height: 20px;
+        width: 20px;
+        font-size: 16px;
+    }
+    .idea > h2 {
+        font-size: 13px;
+    }
+    .skills-list .things > h3,
+    .skills-list .tools > h3,
+    .w-title h3 {
+        font-size: 14px;
+    }
+    .tools > ul > li, .things > p, .idea > p,
+    .w-description p {
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 280px) {
     
     .form > form, .form > .other-contact {
@@ -852,7 +955,75 @@ section.observed .title span {
     .navbar-menu > .navbar-menu-item{
         margin: 0 .1em;
         padding: .2em;
-        font-size: 14px;
+        font-size: 13px;
     }
     
+    section .title {
+        padding: 1.5em 0; 
+        transform: translateY(-3em);
+    }
+    section .title span {
+        height: 50px; width: 50px;
+    }
+    section.observed .title span {
+        font-size: 25px;
+    }
+    section .title h1 {
+        font-size: 16px;
+    }
+    .paragraph > p {
+        font-size: 12px;
+    }
+    .navbar-menu > .navbar-menu-item:hover::before {
+        height: 2px;
+    }
+    .form label, .form-control {
+        font-size: 12px;
+    }
+    .form-group > button {
+        font-size: 13px;
+    }
+    .social-media > .icon a {
+        font-size: 13px;
+    }
+    .social-media > .icon a span {
+        font-size: 12px;
+    }
+    .social-media h3 {
+        font-size: 13px;
+    }
+    .other-contact .social-media h3,
+    .form form > h2 {
+        font-size: 13px;
+    }
+    .footer {
+        font-size: 13px;
+    }
+
+    .home-slogan > h1 {
+        font-size: 20px;
+    }
+    .home-slogan > p {
+        font-size: 13px;
+    }
+    .profile img {
+        width: 120px; height: 120px;
+    }
+    .idea > span {
+        height: 20px;
+        width: 20px;
+        font-size: 18px;
+    }
+    .idea > h2 {
+        font-size: 14px;
+    }
+    .skills-list .things > h3,
+    .skills-list .tools > h3,
+    .w-title h3 {
+        font-size: 13px;
+    }
+    .tools > ul > li, .things > p, .idea > p,
+    .w-description p {
+        font-size: 12px;
+    }
 }

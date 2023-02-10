@@ -1,0 +1,29 @@
+{
+    "Home": {
+        "en": {
+            "title": "Full stack Web Developer",
+            "slogan": "I design and code beautifully simple things, I am passionate about my work."
+        },
+        "fr": {
+            "title": "Développeur Web Full stack",
+            "slogan": "Je conçois et code des choses magnifiquement simples, j'aime beaucoup mon travail."
+        }
+    },
+    "About": {
+        "en": {
+            "presentation": [
+                "Hi, I am <b>Njato</b>",
+                "My fullname is ANDRIAMANIRISOA Njatotiana Fiononana. I am 23 years old and I come from Madagascar and I am malagasy people. Actually, i live in Antananarivo.",
+                "I started coding and learn programming at 19 years old. It becomes my life as well as i work as a developer now. I am interesting in web developpement, desktop and mobile application. I usually work as fullstack developer in my work. However, i am able to work on team either as backend or as frontend."
+            ]
+        },
+        "fr": {
+            "presentation": [
+                "Hi, Je m'appelle <b>Njato</b>",
+                "Mon nom complet est ANDRIAMANIRISOA Njatotiana Fiononana. J’ai 23 ans et je viens de Madagascar et j'ai une nationalité malgache. Je actuellement vis à Antananarivo.",
+                "J’ai commencé à coder et à apprendre la programmation à 19 ans. Cela devient ma vie ainsi que je travaille en tant que développeur maintenant. Je suis intéressé par le développement web, desktop et application mobile. Je travaille habituellement en tant que développeur fullstack dans mon travail. Cependant, je suis capable de travailler en équipe soit en tant que backend, soit en tant que frontend."
+            ]
+        }
+    }
+
+}
