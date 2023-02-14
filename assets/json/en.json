@@ -1,0 +1,95 @@
+{
+    "Home": {
+        "title": "Full stack Web Developer",
+        "slogan": "I design and code beautifully simple things, I am passionate about my work.",
+        "menu": ["About", "Skills", "Work", "Contact"]
+    },
+    "About": {
+        "presentation": [
+            "Hi, I am <b>Njato</b>",
+            "My fullname is ANDRIAMANIRISOA Njatotiana Fiononana. I am 23 years old and I come from Madagascar and I am malagasy people. Actually, i live in Antananarivo.",
+            "I started coding and learn programming at 19 years old. It becomes my life as well as i work as a developer now. I am interesting in web developpement, desktop and mobile application. I usually work as fullstack developer in my work. However, i am able to work on team either as backend or as frontend."
+        ]
+    },
+    "Skill": {
+        "frontend": {
+            "title": "Frontend",
+            "idea": "I value simple content structure, clean design patterns, and thoughtful interactions.",
+            "things": {
+                "title": "Things i like design",
+                "list": ["Logos", "Web", "UI/UX"]
+            },
+            "tools": {
+                "title": "Design tools",
+                "list": [
+                    "PHOTOSHOP CC & CS6",
+                    "Visual Studio Code",
+                    "Bootstrap",
+                    "Pen & paper",
+                    "Bootstrap",
+                    "Fontawesome"
+                ]
+            }
+        },
+        "backend": {
+            "title": "Frontend",
+            "idea": "I value simple content structure, clean design patterns, and thoughtful interactions.",
+            "things": {
+                "title": "Things i like design",
+                "list": ["Logos", "Web", "UI/UX"]
+            },
+            "tools": {
+                "title": "Design tools",
+                "list": [
+                    "PHOTOSHOP CC & CS6",
+                    "Visual Studio Code",
+                    "Bootstrap",
+                    "Pen & paper",
+                    "Bootstrap",
+                    "Fontawesome"
+                ]
+            }
+        }
+    },
+    "Work": {
+        "apps": [
+            {
+                "title": "QUIZ",
+                "github": "https://github.com/Njato007/reactjs-quiz",
+                "weblink": "#",
+                "description": "A simple web application where an user can play by answering questions on various topics. The user select an answer from a list of options in order to move on to the next question. However, there is a countdown for each question, if the user doesn't select any answer within 15 seconds, the next question will show up until the app gives the feedback on the topic chosen by the user.",
+                "built": "This application is built using <b>React</b>"
+            },
+            {
+                "title": "PORTFOLIO",
+                "github": "https://github.com/Njato007/portfolio",
+                "weblink": "https://drab-pink-penguin-boot.cyclic.app",
+                "description": "A simple web appplication that showcases an individual's skill and expreriences. The app's page contains 4 sections which are Home featuring a header and a menu bar that includes the all section's link, About to show the individual's information, Skill for showing individual's skill and expertise, Project showcasing individual's work incliding by description and image, and Contact including a form to send a message.",
+                "built": "This application is built using <b>Nodejs</b>"
+            }
+        ] 
+    },
+    "Contact": {
+        "form": {
+            "title": "Get in touch",
+            "name": "Name",
+            "mail": "Email",
+            "message": "Message",
+            "send": "Send"
+        },
+        "contact": {
+            "title": "Contacts",
+            "location": "Antananarivo, Madagascar",
+            "phone": "Phone: +261 34 51 742 41",
+            "email": "Email: njatotianafiononana@gmail.com"
+        }
+    },
+    "Footer": {
+        "designer": "Designer",
+        "name": "Njatotiana Fiononana ANDRIAMANIRISOA",
+        "other": "Other",
+        "cv": "Curiculum Vitae",
+        "copyright": "Copyright © 2023 Njatotiana Fiononana ANDRIAMANIRISOA. All rights reserved."
+    }
+
+}
