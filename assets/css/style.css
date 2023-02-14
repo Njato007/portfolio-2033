@@ -582,8 +582,10 @@ section .title.dark.white h1 {
 .w-description p {
     color: var(--dark);
     font-size: 16px;
+    text-align: justify;
 }
 .w-description p:nth-child(1) {
+    margin-bottom: 0.2em;
     min-height: 140px;
 }
 .w-description img {
