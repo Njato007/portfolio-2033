@@ -1,0 +1,88 @@
+{
+    "Home": {
+        "title": "Développeur Web full stack",
+        "slogan": "Je conçois et code des choses magnifiquement simples, j'aime beaucoup mon travail.",
+        "menu": ["A propos", "Aptitude", "Travail", "Contact"]
+    },
+    "About": {
+        "presentation": [
+            "Hi, Je m'appelle <b>Njato</b>",
+            "Mon nom complet est ANDRIAMANIRISOA Njatotiana Fiononana. J’ai 23 ans et je viens de Madagascar et j'ai une nationalité malgache. Je actuellement vis à Antananarivo.",
+            "J’ai commencé à coder et à apprendre la programmation à 19 ans. Cela devient ma vie ainsi que je travaille en tant que développeur maintenant. Je suis intéressé par le développement web, desktop et application mobile. Je travaille habituellement en tant que développeur fullstack dans mon travail. Cependant, je suis capable de travailler en équipe soit en tant que backend, soit en tant que frontend."
+        ]
+    },
+    "Skill": {
+        "frontend": {
+            "title": "Frontend",
+            "idea": "J’apprécie la structure de contenu simple, les modèles de conception épurés et les interactions réfléchies.",
+            "things": {
+                "title": "Ce que j'aime dessiner",
+                "list": ["Logos", "Web", "UI/UX"]
+            },
+            "tools": {
+                "title": "Dev tools",
+                "list": [
+                    "PHOTOSHOP CC & CS6",
+                    "Visual Studio Code",
+                    "Bootstrap",
+                    "Pen & paper",
+                    "Bootstrap",
+                    "Fontawesome"
+                ]
+            }
+        },
+        "backend": {
+            "title": "Frontend",
+            "idea": "J’aime coder des choses à partir de zéro et j’aime donner vie aux idées dans le navigateur.",
+            "things": {
+                "title": "Language que j'utilise",
+                "list": ["HTML", "CSS", "Javascript (Nodejs, ReactJS)", "PHP (Codeigniter 4)", "MySQL", "MongoDB"]
+            },
+            "tools": {
+                "title": "Outils de développement",
+                "list": ["Visual Studio Code", "Github", "Facteur", "MongoDB Athlas", "Postman" ]
+            }
+        }
+    },
+    "Work": {
+        "apps": [
+            {
+                "title": "QUIZ",
+                "github": "https://github.com/Njato007/reactjs-quiz",
+                "weblink": "#",
+                "description": "Une application web simple où un utilisateur peut jouer en répondant à des questions sur divers sujets. L’utilisateur sélectionne une réponse dans une liste d’options afin de passer à la question suivante. Cependant, il y a un compte à rebours pour chaque question, si l’utilisateur ne sélectionne aucune réponse dans les 15 secondes, la question suivante apparaîtra jusqu’à ce que l’application donne les commentaires sur le sujet choisi par l’utilisateur",
+                "built": "Cette application est construite à l’aide de <b>React</b>"
+            },
+            {
+                "title": "PORTFOLIO",
+                "github": "https://github.com/Njato007/portfolio",
+                "weblink": "https://drab-pink-penguin-boot.cyclic.app",
+                "description": "Une application Web simple qui met en valeur les compétences et les exprériences d’un individu. La page de l’application contient 4 sections qui sont Accueil avec un en-tête et une barre de menu qui comprend tous les liens de la section, A propos pour montrer les renseignements de la personne, Aptitude à démontrer les compétences et l’expertise de l’individu, Projet mettant en valeur le travail de l’individu par description et image, et Contact incluant un formulaire pour envoyer un message.",
+                "built": "Cette application est construite à l’aide de <b>Nodejs</b>"
+            }
+        ] 
+    },
+    "Contact": {
+        "form": {
+            "title": "Get in touch",
+            "name": "Nom",
+            "mail": "Messagerie électronique",
+            "message": "Message",
+            "send": "Envoyer"
+        },
+        "contact": {
+            "title": "Contacts",
+            "location": "Antananarivo, Madagascar",
+            "phone": "Téléphone: +261 34 51 742 41",
+            "email": "Courriel: njatotianafiononana@gmail.com"
+        }
+    },
+    "Footer": {
+        "designer": "Concepteur",
+        "name": "Njatotiana Fiononana ANDRIAMANIRISOA",
+        "other": "Autre",
+        "cv": "Curiculum Vitae",
+        "copyright": "Droits d’auteur © 2023 Njatotiana Fiononana ANDRIAMANIRISOA. Tous droits réservés."           
+    }
+
+}

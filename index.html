@@ -139,9 +139,9 @@
                         <div class="work-item">
                             <div class="work-item-content">
                                 <div class="w-title">
-                                    <h3>Portfolio</h3>
+                                    <h3>QUIZ</h3>
                                     <div>
-                                        <a href="https://github.com/Njato007">
+                                        <a href="https://github.com/Njato007/reactjs-quiz">
                                             <i class="fa-brands fa-github" aria-hidden="true"></i>
                                         </a>
                                         <a href="#">
@@ -150,10 +150,14 @@
                                     </div>
                                 </div>
                                 <div class="w-description">
-                                    <p>Created by using Nodejs express
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit earum alias eius exercitationem! Quaerat aspernatur, ab atque illum tenetur saepe reprehenderit, eveniet voluptatibus odit voluptate nostrum porro non? Eius, illum!
+                                    <p>
+                                        A simple web application where an user can play by answering questions on various topics.
+                                        The user select an answer from a list of options in order to move on to the next question.
+                                        However, there is a countdown for each question, if the user doesn't select any answer within 15 seconds,
+                                        the next question will show up until the app gives the feedback on the topic chosen by the user.
                                     </p>
-                                    <img src="https://placeholder.com/500x300" alt="">
+                                    <p>This application is built using <b>React</b></p>
+                                    <img src="./assets/images/work-2.png" alt="quiz-app">
                                 </div>
                                 <div class="w-link">
                                     <!-- <a href="#">Take a look</a> -->
@@ -163,21 +167,28 @@
                         <div class="work-item">
                             <div class="work-item-content">
                                 <div class="w-title">
-                                    <h3>QUIZ</h3>
+                                    <h3>PORTFOLIO</h3>
                                     <div>
-                                        <a href="https://github.com/Njato007">
+                                        <a href="https://github.com/Njato007/portfolio" target="_blank">
                                             <i class="fa-brands fa-github" aria-hidden="true"></i>
                                         </a>
-                                        <a href="#">
+                                        <a href="https://drab-pink-penguin-boot.cyclic.app" target="_blank">
                                             <i class="fa-solid fa-globe" aria-hidden="true"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="w-description">
-                                    <p>Created by using Nodejs express
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit earum alias eius exercitationem! Quaerat aspernatur, ab atque illum tenetur saepe reprehenderit, eveniet voluptatibus odit voluptate nostrum porro non? Eius, illum!
+                                    <p>
+                                        A simple web appplication that showcases an individual's skill and expreriences.
+                                        The app's page contains 4 sections which are
+                                        Home featuring a header and a menu bar that includes all section's link,
+                                        About to show the individual's information,
+                                        Skill for showing individual's skill and expertise,
+                                        Project showcasing individual's work incliding by description and image,
+                                        and Contact including a form to send a message.
                                     </p>
-                                    <img src="https://placeholder.com/500x300" alt="">
+                                    <p>This application is built using <b>Nodejs</b></p>
+                                    <img src="./assets/images/work-1.png" alt="quiz-app">
                                 </div>
                                 <div class="w-link">
                                     <!-- <a href="#">Take a look</a> -->
@@ -198,19 +209,19 @@
                     <div class="contact-form">
                         <div class="form">
                             <form class="" onsubmit="sendEmail(); reset(); return false;">
-                                <h2>SEND ME A MESSAGE</h2>
+                                <h2>GET IN TOUCH</h2>
                                 <div class="form-group">
-                                    <input type="text" id="name" class="form-control"  placeholder=" ">
+                                    <input type="text" id="name" class="form-control"  placeholder=" " required>
                                     <label for="name">Name</label>
                                 </div>
                                 
                                 <div class="form-group">
-                                    <input type="email" id="email" class="form-control" placeholder=" ">
+                                    <input type="email" id="email" class="form-control" placeholder=" " required>
                                     <label for="email">Email</label>
                                 </div>
                                 
                                 <div class="form-group">
-                                    <textarea id="message" class="form-control" rows="3" placeholder=" "></textarea>
+                                    <textarea id="message" class="form-control" rows="3" placeholder=" " required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                                 <div class="form-group form-button">
@@ -226,7 +237,7 @@
                                 <div class="social-media">
                                     <h3>Contacts :</h3>
                                     <div class="icon">
-                                        <a href="#">
+                                        <a href="https://www.google.com/maps/place/Antananarivo" target="_blank">
                                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                                             <span>Antananarivo, Madagascar</span>
                                         </a>
@@ -257,13 +268,13 @@
                                 <span>Njatotiana Fiononana ANDRIAMANIRISOA</span>
                             </a>
                             <div class="links">
-                                <a href="https://facebook.com/njatotiana.fiononana.a" target="_blank">
+                                <a href="https://www.facebook.com/njatotiana.fiononana.a" target="_blank">
                                     <i class="fa-brands fa-facebook"></i>
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="https://www.linkedin.com/in/njatotiana-fiononana-andriamanirisoa-a81a00265" target="_blank">
                                     <i class="fa-brands fa-linkedin"></i>
                                 </a>
-                                <a href="https://github.com/Njato007" target="_blank">
+                                <a href="https://www.github.com/Njato007" target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             </div>
@@ -288,28 +299,18 @@
         <script src="assets/js/custom.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script>
+            //syvssirykiscokwd
 
             function sendEmail() {
+                const username_form = document.getElementById('username');
+                const email_form = document.getElementById('email');
+                const message_form = document.getElementById('message');
                 Email.send({
-                    SecureToken: "9515b437-a014-4c09-8ba8-535dde23f7e5",
-                    To : 'njatosportfolio@gmail.com',
+                    SecureToken: "a0f342f0-453d-4539-ac96-dd1c24d8aebb",
+                    To : 'njatotianafiononana@gmail.com',
                     From : 'njatosportfolio@gmail.com',
                     Subject : "Someone got in touch",
-                    Body : `
-                        <style>
-                            * { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-                            p { font-size: 14px; }
-                            .m-content { width: 500px; background: #f5f5f5; padding: 2em;}
-                        </style>
-                        <div class="m-content">
-                            <h2>Content</h2>
-                            <p><b>Name:</b> ${document.getElementById("name").value}</p>
-                            <p><b>Email:</b> ${document.getElementById("email").value}</p>
-                            <p><b>Message:</b> <br>
-                                ${document.getElementById("message").value}    
-                            </p>
-                        </div>
-                    `
+                    Body : `${message_form.value}`
                 }).then(
                     message => {
                         const Form = document.forms[0];
@@ -320,6 +321,12 @@
                     }
                 );
             }
+
+            (function() {
+                location.hash = "fr";
+                // location.reload();
+                // return
+            })();
         </script>
     </div>
 </body>
