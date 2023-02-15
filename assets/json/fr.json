@@ -6,9 +6,9 @@
     },
     "About": {
         "presentation": [
-            "Hi, Je m'appelle <b>Njato</b>",
-            "Mon nom complet est ANDRIAMANIRISOA Njatotiana Fiononana. J’ai 23 ans et je viens de Madagascar et j'ai une nationalité malgache. Je actuellement vis à Antananarivo.",
-            "J’ai commencé à coder et à apprendre la programmation à 19 ans. Cela devient ma vie ainsi que je travaille en tant que développeur maintenant. Je suis intéressé par le développement web, desktop et application mobile. Je travaille habituellement en tant que développeur fullstack dans mon travail. Cependant, je suis capable de travailler en équipe soit en tant que backend, soit en tant que frontend."
+            "Bonjour, je suis ANDRIAMANIRISOA Njatotiana Fiononana. J’ai commencé à coder à 19 ans et je suis devenu développeur web avec 2 ans d’expérience. Je me spécialise dans le développeur full stack et j’ai travaillé sur la construction de plateformes Web pour la saisie de données et la planification des tâches.",
+            "J’ai une solide compréhension de HTML & CSS, Javascript, Nodejs, React, SQL et PHP, et je suis toujours désireux d’en apprendre plus. Dans mon portfolio, vous trouverez des exemples de mon travail dont une application de jeu Quiz et un exemple de portfolio.",
+            "Dans mes temps libres, j’aime explorer de nouvelles technologies et travailler sur des projets personnels. Je suis passionné par le développement Web et je me consacre à l’écriture de code propre, efficace et maintenable. Merci d’avoir pris le temps d’examiner mon portfolio, et j’ai hâte de discuter de toute opportunité potentielle avec vous."
         ]
     },
     "Skill": {
@@ -40,7 +40,7 @@
             },
             "tools": {
                 "title": "Outils de développement",
-                "list": ["Visual Studio Code", "Github", "Facteur", "MongoDB Athlas", "Postman" ]
+                "list": ["Visual Studio Code", "Github", "Postman", "MongoDB Athlas" ]
             }
         }
     },
