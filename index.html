@@ -23,8 +23,8 @@
             </div>
         </div>
         <div class="body">
+            <div class="constellation"></div>
             <section class="section-home flex" id="home">
-                <div class="constellation"></div>
                 <div class="content">
                     <div class="home-slogan">
                         <h1>Full stack Web Developer</h1>
@@ -44,12 +44,14 @@
                 </div>
                 <div class="about-content flex">
                     <div class="paragraph">
-                        <p>Hi, I am <b>Njato</b>. </p>
                         <p>
-                            My fullname is ANDRIAMANIRISOA Njatotiana Fiononana. I am 23 years old and I come from Madagascar and i am malagasy people. Actually, i live in Antananarivo.
+                            Hello, I am ANDRIAMANIRISOA Njatotiana Fiononana. I started coding at 19 years old and I became a web developer with 2 years of experience. I specialize in full stack developer and have worked on building web-based plateforms for data entry, and for task planning.
                         </p>
                         <p>
-                            I started coding at 19 years old. It becomes my life as well as i work as a developer now. I am interesting in web developpement, desktop and mobile application. I usually work as fullstack developer in my work. However, i am able to work on team either as backend or as frontend.
+                            I have a strong understanding of HTML & CSS, Javascript, Nodejs, React, SQL, and PHP, and I am always eager to learn more. In my portfolio, you will find examples of my work including a Quiz game application and an example of a portfolio.
+                        </p>
+                        <p>
+                            In my free time, I enjoy exploring new technologies and working on personal projects. I am passionate about web development and am dedicated to writing clean, efficient, and maintainable code. Thank you for taking the time to review my portfolio, and I look forward to discussing any potential opportunities with you.
                         </p>
                     </div>
                 </div>
@@ -64,7 +66,6 @@
                 <div class="skills-content">
                     <div class="top"></div>
                     <div class="bottom">
-                        <!-- <h1 class="even-title">Skills</h1> -->
                         <div class="dev-skill">
                             <div class="skills-list">
                                 <div class="front-end">
@@ -157,7 +158,15 @@
                                         the next question will show up until the app gives the feedback on the topic chosen by the user.
                                     </p>
                                     <p>This application is built using <b>React</b></p>
-                                    <img src="./assets/images/work-2.png" alt="quiz-app">
+                                    <div class="img">
+                                        <img src="./assets/images/work-2.png" alt="quiz-app">
+                                        <div class="img-text">
+                                            <div>
+                                                <h3>Web application</h3>
+                                                <small>Quiz game</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="w-link">
                                     <!-- <a href="#">Take a look</a> -->
@@ -188,7 +197,15 @@
                                         and Contact including a form to send a message.
                                     </p>
                                     <p>This application is built using <b>Nodejs</b></p>
-                                    <img src="./assets/images/work-1.png" alt="quiz-app">
+                                    <div class="img">
+                                        <img src="./assets/images/work-1.png" alt="quiz-app">
+                                        <div class="img-text">
+                                            <div>
+                                                <h3>Web application</h3>
+                                                <small>Portfolio</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="w-link">
                                     <!-- <a href="#">Take a look</a> -->
@@ -208,7 +225,7 @@
                 <div class="contact-content">
                     <div class="contact-form">
                         <div class="form">
-                            <form class="" onsubmit="sendEmail(); reset(); return false;">
+                            <form class="" onsubmit="sendEmail()">
                                 <h2>GET IN TOUCH</h2>
                                 <div class="form-group">
                                     <input type="text" id="name" class="form-control"  placeholder=" " required>
@@ -221,7 +238,7 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <textarea id="message" class="form-control" rows="3" placeholder=" " required></textarea>
+                                    <textarea id="message" class="form-control" placeholder=" " oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                                 <div class="form-group form-button">
@@ -302,31 +319,42 @@
             //syvssirykiscokwd
 
             function sendEmail() {
-                const username_form = document.getElementById('username');
+                const e = event;
+                e.preventDefault();
+                const name_form = document.getElementById('name');
                 const email_form = document.getElementById('email');
                 const message_form = document.getElementById('message');
                 Email.send({
-                    SecureToken: "a0f342f0-453d-4539-ac96-dd1c24d8aebb",
+                    Username: "njatosportfolio@gmail.com",
+                    Host: "smtp.elasticemail.com",
+                    Password: "DE798B4722A07CE34A8CE39F1AC4E505C79E",
                     To : 'njatotianafiononana@gmail.com',
                     From : 'njatosportfolio@gmail.com',
                     Subject : "Someone got in touch",
-                    Body : `${message_form.value}`
+                    Body : `<html>
+                        <body style="background-color: #f5f5f5; padding: 2em">
+                            <div style="width: 500px; background: #fff; padding: 2em; border: 3px solid #24aea9; margin: 0 auto;">
+                                <h2 style="color: #24aea9;">From Portfolio</h2>
+                                <p class="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px;"><b style="color: #20303a;">Name:</b> ${name_form.value}</p>
+                                <p class="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px;"><b style="color: #20303a;">Email:</b> ${email_form.value}</p>
+                                <p class="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; white-space: pre;"><b style="color: #20303a;">Message:</b> <br> ${message_form.value.replace(/\n/g, '<br>\n')}</p>
+                                <hr>
+                                <p class="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px;">Date: ${new Date().toLocaleDateString()}</p>
+                            </div>
+                        </body>
+                    </html>`
                 }).then(
                     message => {
                         const Form = document.forms[0];
                         Form.classList.add('success');
+                        e.target.reset();
+                        message_form.style.height = "";
                         setTimeout(() => {
                             Form.classList.remove('success')
                         }, 5000);
                     }
-                );
+                ).catch(err => alert(err));
             }
-
-            (function() {
-                location.hash = "fr";
-                // location.reload();
-                // return
-            })();
         </script>
     </div>
 </body>
