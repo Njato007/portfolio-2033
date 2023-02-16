@@ -238,7 +238,7 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <textarea id="message" class="form-control" rows="3" placeholder=" " required></textarea>
+                                    <textarea id="message" class="form-control" placeholder=" " oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                                 <div class="form-group form-button">
@@ -348,18 +348,13 @@
                         const Form = document.forms[0];
                         Form.classList.add('success');
                         e.target.reset();
+                        message_form.style.height = "";
                         setTimeout(() => {
                             Form.classList.remove('success')
                         }, 5000);
                     }
-                );
+                ).catch(err => alert(err));
             }
-
-            (function() {
-                location.hash = "fr";
-                // location.reload();
-                // return
-            })();
         </script>
     </div>
 </body>
