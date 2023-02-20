@@ -229,7 +229,7 @@ section .title.dark.white h1 {
     min-height: 60vh !important;
 }
 .about-content {
-    padding: 6em 2em;
+    padding: 6em 1em;
     min-height: 60vh;
 }
 .about-content p {
@@ -310,7 +310,7 @@ section .title.dark.white h1 {
     justify-content: center;
     margin: 0 auto;
     color: var(--white);
-    margin-bottom: 1em;
+    margin: .2em auto;
 }
 .idea > h2 {
     font-family: 'roboto-regular';
@@ -352,7 +352,7 @@ section .title.dark.white h1 {
     width: 100%;
 }
 .contact-form {
-    padding: 6em 2em;
+    padding: 6em 1em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -565,7 +565,7 @@ section .title.dark.white h1 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 6rem 2em;
+    padding: 6rem 1em;
     padding-top: 7em;
 }
 .work-item {
@@ -985,7 +985,6 @@ form.success .form-button > button{
         height: 30px;
         width: 30px;
         font-size: 25px;
-        padding: 1em;
     }
     .idea > h2 {
         font-size: 18px;
@@ -1067,7 +1066,6 @@ form.success .form-button > button{
         height: 25px;
         width: 25px;
         font-size: 20px;
-        padding: 1em;
     }
     .idea > h2 {
         font-size: 16px;
@@ -1129,6 +1127,9 @@ form.success .form-button > button{
 }
 
 @media screen and (max-width: 652px) {
+    section .title span {
+        height: 60px; width: 60px;
+    }
     
     .designer .social-media {
         text-align: center;
@@ -1147,13 +1148,16 @@ form.success .form-button > button{
 
 @media screen and (max-width: 375px) {
     
+    section .title span {
+        height: 55px; width: 55px;
+    }
     .profile img {
         width: 160px; height: 160px;
     }
     .idea > span {
         height: 20px;
         width: 20px;
-        font-size: 16px;
+        font-size: 18px;
     }
     .idea > h2 {
         font-size: 13px;
@@ -1193,7 +1197,7 @@ form.success .form-button > button{
         font-size: 25px;
     }
     section .title h1 {
-        font-size: 16px;
+        font-size: 15px;
     }
     .paragraph > p {
         font-size: 12px;
