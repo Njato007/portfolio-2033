@@ -1,9 +1,4 @@
 document.body.onscroll = (e) => {
-    if (scrollY > 0) {
-        document.querySelector('.header').classList.add('fixed');
-    } else {
-        document.querySelector('.header').classList.remove('fixed');
-    }
 };
 
 const observer = new IntersectionObserver(function(observables) {
@@ -22,28 +17,31 @@ const observer = new IntersectionObserver(function(observables) {
 const sections = document.querySelectorAll('section');
 sections.forEach(section => observer.observe(section));
 
-const MenuObserver = new IntersectionObserver((observables) => {
-    observables.forEach(observable => {
-        const menuItem = document.querySelector(`a[href='#${observable.target.id}']`)
-                        || document.createElement('a');
-        if (observable.isIntersecting) {
-            menuItem.classList.add('active');
-        } else {
-            menuItem.classList.remove('active');
+// Activate menu Item Link while scrolling in the view section
+const links = ['about', 'skills', 'work', 'contact'].map(e => document.querySelector(`a[href='#${e}']`));
+function activateMenu() {
+    let currentId = null;
+    sections.forEach(section => {
+        const sTop = section.offsetTop;
+        const sHeight = section.offsetHeight;
+        if (scrollY >= (sTop - sHeight / 3)) {
+            currentId = section.getAttribute('id');
         }
     });
-}, {
-    threshold: .5
+    links.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(currentId)) {
+            link.classList.add('active')
+        }
+    });
+}
+
+window.addEventListener('scroll', () => {
+    // set fixed header
+    if (scrollY > 0) {
+        document.querySelector('.header').classList.add('fixed');
+    } else {
+        document.querySelector('.header').classList.remove('fixed');
+    }
+    activateMenu();
 });
-
-sections.forEach(section => MenuObserver.observe(section));
-
-/* SCROLL INTO VIEW BY LINK */
-// document.querySelectorAll("a[href^='#']").forEach(anchor => {
-//     anchor.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         document.querySelector(e.target.getAttribute('href')).scrollIntoView({
-//             behavior: "smooth"
-//         });
-//     });
-// });
