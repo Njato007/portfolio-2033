@@ -229,7 +229,7 @@ section .title.dark.white h1 {
     min-height: 60vh !important;
 }
 .about-content {
-    padding: 6em 1em;
+    padding: 6em 2em;
     min-height: 60vh;
 }
 .about-content p {
@@ -330,8 +330,8 @@ section .title.dark.white h1 {
 }
 .tools > ul li {
     list-style: none;
-    font-family: 'roboto-regular';
-    color: #40474d;
+    /* font-family: 'roboto-regular'; */
+    /* color: #40474d; */
     margin: .3em;
 }
 .dev-skill .description {
@@ -595,7 +595,7 @@ section .title.dark.white h1 {
     color: var(--light-green);
 }
 .work-item-content >div {
-    padding: 1em;
+    padding: .5em 1em;
 }
 .w-description {
     min-height: 250px;
@@ -1127,6 +1127,9 @@ form.success .form-button > button{
 }
 
 @media screen and (max-width: 652px) {
+    .about-content {
+        padding: 6em 1em;
+    }
     section .title span {
         height: 60px; width: 60px;
     }
@@ -1165,7 +1168,7 @@ form.success .form-button > button{
     .skills-list .things > h3,
     .skills-list .tools > h3,
     .w-title h3 {
-        font-size: 14px;
+        font-size: 12px;
     }
     .tools > ul > li, .things > p, .idea > p,
     .w-description p {
@@ -1248,7 +1251,7 @@ form.success .form-button > button{
     .skills-list .things > h3,
     .skills-list .tools > h3,
     .w-title h3 {
-        font-size: 13px;
+        font-size: 12px;
     }
     .tools > ul > li, .things > p, .idea > p,
     .w-description p {
