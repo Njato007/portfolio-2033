@@ -1129,6 +1129,9 @@ form.success .form-button > button{
 }
 
 @media screen and (max-width: 652px) {
+    section .title  {
+        padding: 2.3em 0;
+    }
     .about-content {
         padding: 6em 1em;
     }
@@ -1152,7 +1155,6 @@ form.success .form-button > button{
 }
 
 @media screen and (max-width: 375px) {
-    
     section .title span {
         height: 55px; width: 55px;
     }
