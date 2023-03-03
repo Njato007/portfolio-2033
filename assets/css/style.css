@@ -353,6 +353,9 @@ section .title.dark.white h1 {
     flex-wrap: wrap;
     width: 100%;
 }
+.section-contact .title span {
+    border-color: var(--dark);
+}
 .contact-form {
     padding: 6em 1em;
     display: flex;
